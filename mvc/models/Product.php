@@ -1,7 +1,8 @@
 <?php
 require_once "db.php";
-
-function getAllProduct(){
-    $sql = "SELECT * FROM products";
-    return getData($sql);
+class Product extends db {
+    public function getAllProduct(){
+        $sql = "SELECT * FROM products";
+        return $this->getData($sql);
+    }
 }
