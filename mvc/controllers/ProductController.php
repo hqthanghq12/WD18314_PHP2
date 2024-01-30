@@ -8,7 +8,7 @@ class ProductController{
         $product =$modelProduct->getAllProduct();
 //    var_dump($product);
 //    die();
-        include "views/products/list.php";
+        include "views/products/list.blade.php";
     }
     public function addProduct(){
         echo "Them danh sach san pham";
